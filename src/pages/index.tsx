@@ -40,12 +40,19 @@ export default function Home() {
         <div>
         {!!user.isSignedIn && (
               <>
-              <div className="flex flex-col container">
+              <div className="container">
                 <h1 className="welcome">Welcome to Super Staffing!</h1>
-                <h1 className="select-text">I am a...</h1>
-                <p>Please select one</p>
-                <h2>Job Seeker</h2>
-                <h2>Employer</h2>
+                <h1 className="select-text">I am a... <span className="subtext">(Please select one)</span> </h1>
+                <button
+                    type="button"
+                    className="rounded-full bg-white px-2.5 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                    Job Seeker
+                </button>
+                <button
+                    type="button"
+                    className="rounded-full bg-white px-2.5 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                    Employer
+                </button>
               </div>
             </>
             )}

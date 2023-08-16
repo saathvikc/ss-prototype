@@ -11,10 +11,21 @@ body {
     margin-left: auto;
 }
 
+.container {
+    @apply border-x border-b border-slate-400 h-full w-full p-8;
+    margin: auto;
+    width: 100%;
+    height:fit-content;
+}
+
 .welcome {
     font-size: xx-large;
 }
 
 .select-text {
     font-size: x-large;
+}
+
+.subtext {
+    font-size: small;
 }
