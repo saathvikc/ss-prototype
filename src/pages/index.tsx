@@ -30,13 +30,25 @@ export default function Home() {
             </div>
             )}
             {!!user.isSignedIn && (
-            <div className="signout">
-              <SignOutButton />
-            </div>
+              <>
+              <div className="signout">
+                <SignOutButton />
+              </div>
+            </>
             )}
         </div>
         <div>
-          
+        {!!user.isSignedIn && (
+              <>
+              <div>
+                <h1>Welcome to Super Staffing!</h1>
+                <h1>I am a...</h1>
+                <p>Please select one</p>
+                <h2>Job Seeker</h2>
+                <h2>Employer</h2>
+              </div>
+            </>
+            )}
         </div>
         <div className="w-full h-full md:max-w-2xl border-x border-slate-400">
           {/* <div className="flex flex-col">
