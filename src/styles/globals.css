@@ -10,3 +10,11 @@ body {
     margin-right: 0px;
     margin-left: auto;
 }
+
+.welcome {
+    font-size: xx-large;
+}
+
+.select-text {
+    font-size: x-large;
+}
