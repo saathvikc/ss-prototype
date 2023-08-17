@@ -11,6 +11,16 @@ generator client {
   provider = "prisma-client-js"
 }
 
+model JobSeeker {
+    id        String   @id @default(cuid())
+    createdAt DateTime @default(now())
+
+    username  String
+    email     String
+
+    @@index([username])
+}
+
 model Post {
     id        String   @id @default(cuid())
     createdAt DateTime @default(now())
