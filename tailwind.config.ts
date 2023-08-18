@@ -7,3 +7,14 @@ export default {
   },
   plugins: [],
 } satisfies Config;
+
+// tailwind.config.js
+/* module.exports = {
+  theme: {
+    // ...
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    // ...
+  ],
+} */

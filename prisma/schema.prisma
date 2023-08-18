@@ -15,10 +15,17 @@ model JobSeeker {
     id        String   @id @default(cuid())
     createdAt DateTime @default(now())
 
-    username  String
+    firstname String
+    lastname  String
     email     String
+    country   String
+    address   String
+    city      String
+    state     String
+    postal    String
+    specialty String
 
-    @@index([username])
+    @@index([id])
 }
 
 model Post {
