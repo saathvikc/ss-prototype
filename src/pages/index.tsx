@@ -55,7 +55,7 @@ export default function Home() {
                 <Link href='/profile-creation/jobseeker'>
                   <button
                       type="button"
-                      className="rounded-full bg-white px-2.5 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                      className="rounded-full bg-white px-2.5 py-1 text-sm font-semibold text-gray-200 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
                       onClick={setJobSeeker}>
                       Job Seeker
                   </button>
@@ -63,7 +63,7 @@ export default function Home() {
                 <Link href='/profile-creation/employer'>
                   <button
                       type="button"
-                      className="rounded-full bg-white px-2.5 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                      className="rounded-full bg-white px-2.5 py-1 text-sm font-semibold text-gray-200 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
                       onClick={setEmployer}>
                       Employer
                   </button>
