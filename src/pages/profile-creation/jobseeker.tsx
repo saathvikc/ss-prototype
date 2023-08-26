@@ -313,13 +313,12 @@ return (
             <div className="border-b pb-12">
                 <h2 className="text-3xl font-semibold leading-7 text-gray-200 pl-8">Sync Platforms</h2>
                 <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 pl-8">
-
                 </div>
             </div>
 
             <Link href='/profile-creation/confirmation'>
                 <button
-                    type="button"
+                    type="submit"
                     className="rounded-full bg-white px-2.5 py-1 text-sm font-semibold text-gray-200 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-500"
                     >
                     Create Profile

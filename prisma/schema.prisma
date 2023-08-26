@@ -15,25 +15,41 @@ model JobSeeker {
     id        String   @id @default(cuid())
     createdAt DateTime @default(now())
 
-    firstname String
-    lastname  String
-    email     String
-    country   String
-    address   String
-    city      String
-    state     String
-    postal    String
-    specialty String
+    firstname     String
+    lastname      String
+    email         String
+    country       String
+    address       String
+    city          String
+    state         String
+    postal        String
+    years         Int
+    trials        Int
+    organizations Int
+    specialty     String
+    linkedin      String
 
     @@index([id])
 }
 
-model Post {
+model Employer {
     id        String   @id @default(cuid())
     createdAt DateTime @default(now())
 
-    content   String @db.VarChar(255)
-    authorId  String
+    company       String
+    email         String
+    country       String
+    address       String
+    city          String
+    state         String
+    postal        String
+    years         Int
+    industry      String
+    trials        Int
+    size          Int
+    specialty     String
+    linkedin      String
+    website       String
 
-    @@index([authorId])
+    @@index([id])
 }
