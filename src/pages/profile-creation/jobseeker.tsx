@@ -4,10 +4,11 @@ import { api } from "~/utils/api";
 import { SignInButton, SignOutButton, useUser } from "@clerk/nextjs"; 
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
 
-export default function jobseeker() {
 
+
+export default function jobseeker() {
 return (
-    <form>
+    <form action="" method="post">
         <div className="space-y-12">
             <div className="border-b pb-12">
                 <h2 className="text-3xl font-semibold leading-7 text-gray-200 pl-8 pt-8">Personal Information</h2>
@@ -15,7 +16,7 @@ return (
 
                 <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 pl-8 pr-8">
                     <div className="sm:col-span-3">
-                    <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-200">
+                    <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-200 required">
                         First name
                     </label>
                     <div className="mt-2">
@@ -318,7 +319,7 @@ return (
 
             <Link href='/profile-creation/confirmation'>
                 <button
-                    type="submit"
+                    type="submit" 
                     className="rounded-full bg-white px-2.5 py-1 text-sm font-semibold text-gray-200 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-500"
                     >
                     Create Profile
