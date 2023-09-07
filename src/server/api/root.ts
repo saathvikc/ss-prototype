@@ -1,6 +1,6 @@
 import { createTRPCRouter } from "~/server/api/trpc";
 import { employerRouter } from "./routers/employer";
-import { jobseekerRouter } from "./routers/jobseeker";
+import { jobSeekerRouter } from "./routers/jobseeker";
 import employer from "~/pages/profile-creation/employer";
 
 /**
@@ -9,7 +9,7 @@ import employer from "~/pages/profile-creation/employer";
  * All routers added in /api/routers should be manually added here.
  */
 export const appRouter = createTRPCRouter({
-  jobSeeker: jobseekerRouter,
+  jobSeeker: jobSeekerRouter,
   employer: employerRouter,
 });
 

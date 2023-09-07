@@ -229,7 +229,7 @@ return (
 
             <Link href='/profile-creation/confirmation'>
                 <button
-                    type="button"
+                    type="submit"
                     className="rounded-full bg-white px-2.5 py-1 text-sm font-semibold text-gray-200 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-500"
                     >
                     Create Profile
